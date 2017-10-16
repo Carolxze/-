@@ -1,0 +1,11 @@
+#include <iostream> 
+using namespace std;
+int main()
+{
+	int x;
+	cout<<"请输入年份：";
+	cin>>x;
+	if(x%400==0) cout<<"你输入的年份为闰年！"<<endl;
+	else cout<<"你输入的年份不是闰年"<<endl;
+	return 0; 
+}
