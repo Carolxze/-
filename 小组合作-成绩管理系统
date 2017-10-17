@@ -1,0 +1,62 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+int main()
+{
+	cout<<"**********************************************"<<'\n';
+	cout<<"*        欢迎使用学生成绩管理系统1.1         *"<<'\n';
+	cout<<"*     颜静茵 谢智恩  计算机1706班 2017.10.15 *"<<'\n';
+	cout<<"*     1、输入4个同学的代号和成绩             *"<<'\n';
+	cout<<"*     2、显示4个同学的代号和成绩列表         *"<<'\n';
+	cout<<"*     3、求4人总分                           *"<<'\n';
+	cout<<"*     4、求4人平均分                         *"<<'\n';
+	cout<<"*     5、查询某同学的分数                    *"<<'\n';
+	cout<<"*     6、统计及格率                          *"<<'\n';
+	cout<<"*     7、退出                                *"<<'\n';
+	cout<<"*   请输入(1-4)选择：                        *"<<'\n';
+	cout<<"*                                            *"<<'\n';
+	cout<<"**********************************************"<<'\n';
+	cout<<"请输入=";
+	int w;
+	char a,b,c,d,i;
+	float e,f,g,h;
+	cin>>w;
+	while(1)
+	{
+		switch(w)
+		{
+		case 1: cout<<"请输入4个同学的代号";		cin>>a>>b>>c>>d;
+			    cout<<"请输入4个同学的成绩";		cin>>e>>f>>g>>h; 				break;
+		case 2: cout<<"4个同学的代号和成绩列表"<<endl;
+				cout<<setw(5)<<a<<setw(5)<<b<<setw(5)<<c<<setw(5)<<d<<'\n';	
+				cout<<setw(5)<<e<<setw(5)<<f<<setw(5)<<g<<setw(5)<<h<<'\n';			break;
+		case 3: cout<<"4人总分"<<endl;
+				cout<<e+f+g+h<<'\n';					      						break;               				
+		case 4: cout<<"平均分"<<endl;
+		        cout<<(e+f+g+h)/4<<'\n';											break;
+		case 5: cout<<"请输入某位同学代号";	cin>>i;
+				if (i==a)
+				 	cout<<a<<setw(5)<<e;	
+				if (i==b)		
+					cout<<b<<setw(5)<<f;	
+				if (i==c)		
+			    	cout<<c<<setw(5)<<g;	
+				if (i==d)		
+					cout<<d<<setw(5)<<h;	break;
+			    //if (i==)
+				//	{
+				//	cout<<"代号错误，请重新输入："	;
+				//	cin>>i;
+				//	}	
+		        //goto loop;														
+		case 6: cout<<"及格率";
+				cout<<"暂待开发...."<<'\n';	   break;										break;
+		default: cout<<"退出"<<endl;													 
+		}
+	cout<<"                            "<<'\n';
+	cout<<"退出请输7"<<'\n'; 
+	cout<<"请继续输入=";	cin>>w;    
+		if(w==7)			 break;
+	}
+	return 0;
+}
