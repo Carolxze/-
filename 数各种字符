@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+int main()
+{ int a=0,b=0,c=0,d=0,e=0;
+	cout<<"请输入一段话，并按Enter结束:"<<endl;
+	char n;
+	while((n=getchar())!='\n')
+	{
+		if(n>='A'&&n<='Z')
+		 a++;
+		else
+		if(n>='a'&&n<='z')
+		 b++;
+		 else
+		if(n>='0'&&n<='9') 
+		c++;
+		else
+		if(n==' ')
+		d++;
+		else 
+		e++;
+		
+	}
+	cout<<"大写字母个数："<<a<<endl;
+	cout<<"小写字母个数："<<b<<endl; 
+	cout<<"数字字符个数："<<c<<endl;
+	cout<<"空    格个数："<<d<<endl;
+	cout<<"其他字符个数："<<e<<endl;
+	return 0;
+	 
+	
+	
+	
+	
+	
+}
