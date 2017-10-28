@@ -1,0 +1,12 @@
+#include <iostream>
+ using namespace std;
+ #define PI 3.1415926
+ #define S PI*R*R
+ int main()
+ {
+ 	int R;
+ 	cout<<"请输入圆的半径："<<endl; 
+ 	cin>>R;
+ 	cout<<"s="<<S<<endl;
+ 	return 0;
+  }
