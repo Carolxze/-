@@ -1,0 +1,32 @@
+#include <iostream>   
+using namespace std;
+
+void xiu()
+{ 
+	float a,b,c,d;
+	cout<<"请输入四个数：";
+	cin >>a>>b>>c>>d;
+	cout<<"四个数的平均数是："<<(a+b+c+d )/4<<endl;
+	
+ } 
+
+void printstar( )
+{	
+	cout<<"******************"<<'\n';
+}
+
+void printmessage( )
+{	
+	cout<<"  Welcome to C++"<<'\n';
+}
+
+int main( )
+{	
+	printstar( );
+	printmessage( );
+	xiu();
+	printstar( );
+	getchar();
+	
+	return 0;
+}
